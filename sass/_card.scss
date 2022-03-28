@@ -1,0 +1,56 @@
+@import "variables";
+
+.contenedor {
+    background: $color_background_card;
+
+    width: 90%;
+    max-width: $ancho_card - $padding * 2;
+    height: $alto_card - $padding * 2;
+
+    border-radius: $border_radius;
+
+    padding: $padding;
+
+    display: flex;
+
+    flex-direction: column;
+    
+
+}
+
+main { 
+
+    > img {
+        max-width: $anchoyalto_img;
+        max-height: $anchoyalto_img;
+
+        border-radius: $border_radius;
+
+        margin-bottom: $margin;
+    }
+
+
+    text-align: center;
+
+    > h1 {
+        color: $color_fuente_titulo;
+
+        font: {
+            family: $font_family;
+            size: $size_titulo;
+            weight: $wieght_titulo
+        }
+
+        margin-bottom: $margin;
+    }
+
+    > p {
+        color: $color_fuente_texto;
+
+        font: {
+            family: $font_family;
+            size: $size_texto;
+            weight: $weight_texto;
+        }
+    }
+}
